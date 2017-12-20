@@ -1,0 +1,55 @@
+Creating DrawDownWiki.info DNS, server(cPanel) & wiki setup ### COMPLETED #### 
+1.  Subdomain added to cpanel.
+2.  drawdown Root dir added
+3.  drawdown MySQL DB created  https://www.siteground.com/tutorials/mediawiki/manual-installation/
+4.  userdrawdown a full privileged user of MySQL DB created/granted
+5.  Create FTP 
+6.  Addon Domain of drawdownwiki.info with subdomain of drawdownwiki added to cp cpanel with 
+7.  cname host:www points to:@ (fow urls with and without www preface)
+8.  Google reCaptcha registered, installed, setup
+Lean start skipped:  Google analytics
+Lean start skipped:  Various extensions
+9. Install Semantic MW https://www.mediawiki.org/wiki/Extension:Semantic_MediaWiki
+10.  Install Semantic Title https://www.mediawiki.org/wiki/Extension:Semantic_Title
+11.  Create account for bot (A_Admin)
+12.  Grant account privileges to key accounts (Felix & Bot) http://drawdownwiki.info/index.php?title=Special:UserRights
+
+Adding Articles to DrawDownWiki.info ### COMPLETED #### 
+13. Add login keys to local keychain ( To /usr/local/keys.json added   "DrawDownWiki":{"User": A_Admin,  "Access": "THE-USER-PASSWORD}, )
+14. Clean data from excel and export to a .csv (1st row are labels, 2nd row variable_names)
+15. Created category "SolutionArticle" http://drawdownwiki.info/index.php?title=Category:SolutionArticle https://www.mediawiki.org/wiki/Help:Categories
+16. Create category template (side box, formatting, url variables) http://drawdownwiki.info/index.php?title=Template:SolutionArticle&action=edit
+17. Write script to generate articles, set variables & formatting: /Users/macbook/GIT/DrawDownWiki/Gen_Script_DrawDownWiki.py
+18. Add article page titles to .csv for current generation & for records
+19. Execute Gen_Script_DrawDownWiki.py & review generated articles
+
+Aesthetics ### COMPLETED #### 
+20.  Set sidebar links http://drawdownwiki.info/index.php?title=MediaWiki:Sidebar 
+21.  Remove default tool bar http://www.mikebrawley.com/2011/11/how-to-remove-toolbox-from-the-sidebar-in-mediawiki/  http://drawdownwiki.info/index.php?title=MediaWiki:Common.css
+22.  Create stand-in logo drawdown.png
+23.  Resize stand-in logo to MW standard 135x135: "convert drawdown.png -resize 200x100 drawdown.png"
+24.  Stand-in logo added as "$wgResourceBasePath/resources/assets/drawdown.png"
+
+Additional ### COMPLETED #### 
+25.  Every page notice added http://drawdownwiki.info/index.php?title=MediaWiki:Sitenotice
+26.  Bottom recent edit notice removed (edit both http://drawdownwiki.info/index.php?title=MediaWiki:Lastmodifiedat AND http://drawdownwiki.info/index.php?title=MediaWiki:Lastmodifiedatby )
+27.  Remove other contributions mention http://drawdownwiki.info/index.php?title=MediaWiki:Othercontribs
+28.  Remove disclaimer notice from footer http://drawdownwiki.info/index.php?title=MediaWiki:Disclaimers
+29.  Remove privacy policy from footer http://drawdownwiki.info/index.php?title=MediaWiki:Privacypage
+30. Remove about link from footer http://drawdownwiki.info/index.php?title=MediaWiki:Aboutsite
+Lean start skipped:  Add Links etc, optional additional modifications: http://how-to.wikia.com/wiki/How_to_customize_MediaWiki#Add_links
+31. Allow external image adjust wiki config settings http://www.mediawiki.org/wiki/Manual:$wgAllowExternalImages
+32. Updated & approve the "Main Page": http://drawdownwiki.info/index.php?title=Main_Page
+33. (25. cont.) Updated the everypage notice with FK text from 2017 Dec 20 
+34. Create quote template. Use by {{ QuoteTemplate | "Sometext"}}  controls: http://drawdownwiki.info/index.php?title=Template:QuoteTemplate
+35. Created favicon & added to cPanel dir: DD/ then adjusted wiki $wgFavicon = "$wgScriptPath/CP_Logo_square.ico";
+36. (22. cont.) create logo with "(unofficial)" & upload to cPanel
+37. Create pages: About, Help, Donate
+38. (20. cont.) update sidebar
+Lean start skip form for editing variables, pubic will use edit tab on pages for discussion.
+39. As per FK update Solution Articles template with Additions, Technical, Business, and edit every page to include _talk3  (re: "Does the public edit the articles directly or do we install wiki forms and create a form for the Article category inorder to edit community discussion?")
+
+#### To Do #### 
+
+??. New Directory Page (in progress http://drawdownwiki.info/index.php?title=Directory_of_Solutions )
+??. Coming Attractions
