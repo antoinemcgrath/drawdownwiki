@@ -53,25 +53,26 @@ Lean start skip: New Directory Page (in progress http://drawdownwiki.info/index.
 40. FK identified that editing was difficult for public: Solution is to: Install form extension  https://www.mediawiki.org/wiki/Extension:Page_Forms/Download_and_installation (done) then #41
 41. Created form edit method for category SolutionArticle  http://drawdownwiki.info/index.php?title=Form:SolutionArticle&action=edit
 
+
+
+
+
 #### To Do ####
-??. Coming Attractions
-
-12/21/2017 FX::
-PRIORITY
-DATABOX: Change sequence and Rename labels to: *Solution *Sector: (for final 20 that should be Coming Attraction) *Page in Book: *Ranking in Book:  *GHG Reduction: *Net Cost: *Savings: *Links and References  *Technical Assessment
-Add note at bottom of Databox: “Summary from Published Drawdown Book (more on categories on page xiv)”
-Add 20 Coming Attractions. And Directory should show 82 — now it’s 83 because it includes Directory of Solutions in the count. [FYI Mystery solved why it’s not 80: 77th ranked solution includes Energy Storage (Distributed, Energy Storage) Utilities), Grid Flexibility]
-LESS IMMEDIATE
-Troubleshoot article display issue on iPhone
-Give me admin privileges, ability to give a user Admin privileges.
-Add a 4th community text secdtion: Wikipedia & Other Top Links
-Change filename for SolutionArticle.
-::
-
+Fine now? 1. “When in edit mode on a page, I want to be able to edit the 3 community text sections. (Right now edit presents the ability to edit the databox.)”
+2. “DATABOX: Change sequence and Rename labels to: *Solution *Sector: (for final 20 that should be Coming Attraction) *Page in Book: *Ranking in Book:  *GHG Reduction: *Net Cost: *Savings: *Links and References  *Technical Assessment”
+3. “Add note at bottom of Databox: “Summary from Published Drawdown Book (more on categories on page xiv)”
+4. “Add 20 Coming Attractions. And Directory should show 82 — now it’s 83 because it includes Directory of Solutions in the count. [FYI Mystery solved why it’s not 80: 77th ranked solution includes Energy Storage (Distributed, Energy Storage) Utilities), Grid Flexibility]”
+5. “I do want to add another editable page for “Other Drawdown projects” below Directory of Solutions.”
+6. “And delete the “From ClimatePolitics” line on the sidebar, since those pages are now on the site”
+Fine now? 7. “Troubleshoot article display issue on iPhone ” -Changed URL rendering to short text with hyperlink, prevents screen hogging text lines
+8. “Give me admin privileges, ability to give a user Admin privileges.”
+9. “Add a 4th community text secdtion: Wikipedia & Other Top Links”
+10. “Change filename for SolutionArticle.” (edited)
 
 
 
 #### Neat but not now ####
+Remove Discussion and edit tab: Ant note: https://www.hostknox.com/knowledgebase/674/How-to-remove-the-top-navigation-page-tabs-in-MediaWiki.html  http://drawdownwiki.info/index.php?title=MediaWiki:Common.css
 SMW Graph https://www.mediawiki.org/wiki/Extension:Semantic_MediaWiki_Graph
 Akin to SparqlCharts https://www.mediawiki.org/wiki/Extension:SparqlCharts
 Glossary https://www.mediawiki.org/wiki/Extension:Semantic_Glossary
