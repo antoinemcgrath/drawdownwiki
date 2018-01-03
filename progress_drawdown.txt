@@ -61,14 +61,25 @@ Additional: Felix' feedback list
 46. Created link for: “I do want to add another editable page for “Other Drawdown projects” below Directory of Solutions.”
 47. Removed per request: “And delete the “From ClimatePolitics” line on the sidebar, since those pages are now on the site”
 48. 4th community text section added: Wikipedia & Other Top Links” (Instead “Wikipedia & other top links” was used if not all of the other sections need to be renamed to match by using upper caps. http://drawdownwiki.info/index.php?title=Form:SolutionArticle&action=edit )
-
+49. NEW TEXT FOR ALL ARTICLE PAGES (This can co-exist with Nithin’s new help text):
+Please use these initial categories to include your research and lists of open questions and topics.
+Quick help: (more at [http://drawdownwiki.info/index.php?title=Help Crowdsourcer help link] in sidebar).
+Without establishing an account, you can “Read” this article, use the “View history” tab to see changes, and the “Discussion” tab to view conversations and opinions.
+When you register as a user on the upper right of the screen, you can use the “Edit with form” tab to add information and the “Discussion” tab for comments.
+Right now at our Help link you can find links to help at MediaWiki but soon we’ll have our own guidance about research sources and formatting your
+50.  Admin question: Point me to where I can edit the Sidebar without needing your help so I can delete the “From ClimatePolitics” line on the sidebar, since
+Answer: On any media wiki it is the MediaWiki:Sidebar page, in our case simply enter the URL: http://drawdownwiki.info/index.php?title=MediaWiki:Sidebar it is found from the sidebar by clicking: Admin > Lists of pages > All Pages > Namespace = Mediawiki
+##. (DONE Felix completed) Intro text for new Other Drawdown projects article:
+Page headline: Thanks for bringing Drawdown solutions to the world
+We invite  you to list here any project that advances awareness, research, or deployment of Drawdown solutions! For any project, please write a short paragraph including as much of the following as you can: Name, Description,  Location, Date Started, Needs and Resources Available, URL or
+51. “And delete the “From ClimatePolitics” line on the sidebar, since those pages are now on the site”
 
 
 
 
 #### To Do ####
-NOT YET “Add 20 Coming Attractions. And Directory should show 82 — now it’s 83 because it includes Directory of Solutions in the count. [FYI Mystery solved why it’s not 80: 77th ranked solution includes Energy Storage (Distributed, Energy Storage) Utilities), Grid Flexibility]”
-NOT YET ?-Please Explain Further: 10. “Change filename for SolutionArticle.” (edited)
+
+
 
 
 
