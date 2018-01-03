@@ -67,16 +67,8 @@ Additional: Felix' feedback list
 
 
 #### To Do ####
-DONE 1. “When in edit mode on a page, I want to be able to edit the 3 community text sections. (Right now edit presents the ability to edit the databox.)”
-DONE 2. “DATABOX: Change sequence and Rename labels to: *Solution *Sector: (for final 20 that should be Coming Attraction) *Page in Book: *Ranking in Book:  *GHG Reduction: *Net Cost: *Savings: *Links and References  *Technical Assessment”
-DONE 3. “Add note at bottom of Databox: “Summary from Published Drawdown Book (more on categories on page xiv)”
-NOT YET 4. “Add 20 Coming Attractions. And Directory should show 82 — now it’s 83 because it includes Directory of Solutions in the count. [FYI Mystery solved why it’s not 80: 77th ranked solution includes Energy Storage (Distributed, Energy Storage) Utilities), Grid Flexibility]”
-DONE 5. Link now exists and is ready for you to click on and fill with text: “I do want to add another editable page for “Other Drawdown projects” below Directory of Solutions.”
-DONE 6. “And delete the “From ClimatePolitics” line on the sidebar, since those pages are now on the site”
-DONE 7. “Troubleshoot article display issue on iPhone ” -Changed URL rendering to short text with hyperlink, prevents screen hogging text lines
-DONE 8. “Give me admin privileges, ability to give a user Admin privileges.”
-DONE 9. “Add a 4th community text secdtion: Wikipedia & Other Top Links” Instead “Wikipedia & other top links” should be used or else all of the other sections need to be renamed to match by using upper caps. http://drawdownwiki.info/index.php?title=Form:SolutionArticle&action=edit
-?-Please Explain Further: 10. “Change filename for SolutionArticle.” (edited)
+NOT YET “Add 20 Coming Attractions. And Directory should show 82 — now it’s 83 because it includes Directory of Solutions in the count. [FYI Mystery solved why it’s not 80: 77th ranked solution includes Energy Storage (Distributed, Energy Storage) Utilities), Grid Flexibility]”
+NOT YET ?-Please Explain Further: 10. “Change filename for SolutionArticle.” (edited)
 
 
 
