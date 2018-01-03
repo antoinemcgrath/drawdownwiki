@@ -74,17 +74,53 @@ Page headline: Thanks for bringing Drawdown solutions to the world
 We invite  you to list here any project that advances awareness, research, or deployment of Drawdown solutions! For any project, please write a short paragraph including as much of the following as you can: Name, Description,  Location, Date Started, Needs and Resources Available, URL or
 51. “And delete the “From ClimatePolitics” line on the sidebar, since those pages are now on the site”
 
-
-
-
 #### To Do ####
+
+1. Create new articles and add to Directory: 20 Coming Attractions articles. Infobox: Sector will be Coming attractions; labels will show page number and "Book article" link from Links & references label; rest will be blank.
+
+2. Directory and formatting: Delete Alphabet letters, run list together. 
+
+3. Top of all article pages: replace help text now there with these edits:
+Please use these initial categories to include your research and lists of open questions and topics.
+Quick help: Without establishing an account, you can “Read" this article, use the "View history" tab to see changes, and the “Discussion" tab to view conversations and opinions. When you register as a user, on the upper right of your screen, you can use the "Edit with Forms"  tab to add information and the “Discussion” tab for comments. Right now at our  [http://drawdownwiki.info/index.php?title=Help Crowdsourcer help] link in the sidebar, you can find links to help at MediaWiki but soon we'll have our own guidance about research sources and formatting your contributions.
+
+DONE 4. Infobox: Remove original "Solution Sector:", rename "Sector:" as "Solution sector:" & first word caps only for all labels
+
+5. Infobox: results for Links & referencesshould say "Book_article"
+
+6. Infobox: results for Technical assessment should say  Drawdown database PDF
+
+DONE 7. Bottom of solution articles: suppressbox with text saying “Category: SolutionArticle” (completed via http://drawdownwiki.info/index.php?title=MediaWiki:Common.css&action=edit adding .catlinks { display: none; })
+
+8. Felix & Antoine Work with Nithin to add new Crowdsourcer help text
+Change filename for “SolutionArticle” to http://drawdownwiki.info/index.php?title=Category:Directory_of_solutions so it displays "Directory of solutions" matching navbar link 
+**Is this a single request or multiple requests? If the later please seperate.
+
+9. To wrap text around photo: Create template for homepage with sideline element for book photo image 
+**If this formatting preference necessary please post a quick sketch (by "homepage" I presume "Main page" is meant).
+
+10. Felix will ask CMD how to "freeze" the labels and the information in the infobox to all but Admin.
+
+DONE 11. (Logo take 4, is the image edit) Logo: Make word WIKI all lower case
+
+DONE 12 Rename sidebar Starting page to Main page
+
+DONE 13 Remove From CP from nav bar
+
+DONE 14 Remove "Edit" tab from articles ($wgGroupPermissions['*']['viewedittab'] = false;)   
+**Now that this is done, perhaps #10 is moot 
+
+
+
 
 
 
 
 
 #### Neat but not now ####
-Remove Discussion and edit tab: Ant note: https://www.hostknox.com/knowledgebase/674/How-to-remove-the-top-navigation-page-tabs-in-MediaWiki.html  http://drawdownwiki.info/index.php?title=MediaWiki:Common.css
+Remove Discussion tab: Ant note: https://www.hostknox.com/knowledgebase/674/How-to-remove-the-top-navigation-page-tabs-in-MediaWiki.html  http://drawdownwiki.info/index.php?title=MediaWiki:Common.css
 SMW Graph https://www.mediawiki.org/wiki/Extension:Semantic_MediaWiki_Graph
 Akin to SparqlCharts https://www.mediawiki.org/wiki/Extension:SparqlCharts
 Glossary https://www.mediawiki.org/wiki/Extension:Semantic_Glossary
+Google analytics
+Various extensions
