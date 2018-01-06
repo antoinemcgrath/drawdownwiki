@@ -58,7 +58,7 @@ Creating DrawDownWiki.info DNS, server(cPanel) & wiki setup ### COMPLETED ####
  43. Change article page's side display box formates to: “DATABOX: Change sequence and Rename labels to: *Solution *Sector: (for final 20 that should be Coming Attraction) *Page in Book: *Ranking in Book:  *GHG Reduction: *Net Cost: *Savings: *Links and References  *Technical Assessment” Helpful: https://www.mediawiki.org/wiki/Help:Tables
  44. “Add note at bottom of Databox: “Summary from Published Drawdown Book (more on categories on page xiv)”
  45. Double check admin privledges for Felix' account
- 46. Created link for: “I do want to add another editable page for “Other Drawdown projects” below Directory of Solutions.”
+ 46. Created link as per: “I do want to add another editable page for “Other Drawdown projects” below Directory of Solutions.”
  47. Removed per request: “And delete the “From ClimatePolitics” line on the sidebar, since those pages are now on the site”
  48. 4th community text section added: Wikipedia & Other Top Links” (Instead “Wikipedia & other top links” was used if not all of the other sections need to be renamed to match by using upper caps. http://drawdownwiki.info/index.php?title=Form:SolutionArticle&action=edit )
  49. NEW TEXT FOR ALL ARTICLE PAGES (This can co-exist with Nithin’s new help text):
@@ -75,56 +75,58 @@ Creating DrawDownWiki.info DNS, server(cPanel) & wiki setup ### COMPLETED ####
   51. “And delete the “From ClimatePolitics” line on the sidebar, since those pages are now on the site”
   
 
-#### To Do ####
-**1. Appears to be many specific requests, let me know if I've understood and seperated them correctly:
-1A. Create 20 Coming Attractions articles
-1B. Add to Directory: 20 Coming Attractions articles. 
-1C. (Infobox) Variable "Sector:" will be  "Coming attractions"
-        ** Do you want "Sector" or (as with the other articles) "Solution sector:"?
-1C. (Infobox) Variable "Page in book:" will show page number 
-1C. (Infobox) "Book article" link from Links & references label
-        **Clarity is key here: I believe what you want is to direct the variable "Links & references:" to the URLs of the original excel column "Link to Writeup, References, and Errata" as a hyperlink that displays the text "Book_article"
-1C. (Infobox) rest will be blank. 
+DONE 53. Create 20 Coming Attractions articles F: YES, NOT YET DONE
+DONE 54. Add to Directory: 20 Coming Attractions articles. F:Yes.
+DONE 55. (Infobox) Variable "Sector:" will be  "Coming attractions"
+        ** Do you want "Sector" or (as with the other articles) "Solution sector:"? F: YES, all Solutions and Coming Attractions should have the same label, 'Solutions" as you've already changed throughout.
+DONE 55. (Infobox) Variable "Page in book:" will show page number  F:YES
+DONE 55. (Infobox) "Book article" link from Links & references label
+        **Clarity is key here: I believe what you want is to direct the variable "Links & references:" to the URLs of the original excel column "Link to Writeup, References, and Errata" as a hyperlink that displays the text "Book_article" F:YES
+DONE 55. (Infobox) rest will be blank.  F:YES
 
-2. Directory and formatting: Delete Alphabet letters, run list together. 
-**If you mean the this page: http://drawdownwiki.info/index.php?title=Category:SolutionArticle it is a special 'Category:' page and cannot be edited that way. I can create a new page, and render a borderless table displaying articles from the "SolutionArticle" category
+DONE 56. Directory and formatting: Delete Alphabet letters, run list together. 
+**If you mean the this page: http://drawdownwiki.info/index.php?title=Category:SolutionArticle it is a special 'Category:' page and cannot be edited that way. I can create a new page, and render a borderless table displaying articles from the "SolutionArticle" category.F: YES, if it's not too time-consuming to create, this will be fine. **Rendered with border, borderless table with sorting looks suboptimal
 
-DONE 3. Top of all article pages: replace help text now there with these edits:
-Please use these initial categories to include your research and lists of open questions and topics.
-Quick help: Without establishing an account, you can “Read" this article, use the "View history" tab to see changes, and the “Discussion" tab to view conversations and opinions. When you register as a user, on the upper right of your screen, you can use the "Edit with Forms"  tab to add information and the “Discussion” tab for comments. Right now at our  [http://drawdownwiki.info/index.php?title=Help Crowdsourcer help] link in the sidebar, you can find links to help at MediaWiki but soon we'll have our own guidance about research sources and formatting your contributions.
 
-DONE 4. Infobox: Remove original "Solution Sector:", rename "Sector:" as "Solution sector:" & first word caps only for all labels
+DONE 57. Infobox: Results for "Links & references:" should hyperlink to the current URL but display "Book_article"
+**If this looks good I will write & execute a script to automate this. F:YES, THANKS
 
-5. Infobox: Results for "Links & references:" should hyperlink to the current URL but display "Book_article"
-**If this looks good I will write & execute a script to automate this.
+DONE 58. Infobox: Results for "Technical assessment:" should hyperlink to the current URL but display "Drawdown_database_PDF"
+**If this looks good I will write & execute a script to automate this. F:YES, THANKS
 
-6. Infobox: Results for "Technical assessment:" should hyperlink to the current URL but display "Drawdown_database_PDF"
-**If this looks good I will write & execute a script to automate this.
+DONE 59. Bottom of solution articles: suppressbox with text saying “Category: SolutionArticle”
+**completed via http://drawdownwiki.info/index.php?title=MediaWiki:Common.css&action=edit adding .catlinks { display: none; } F"YES, THANKS
 
-DONE 7. Bottom of solution articles: suppressbox with text saying “Category: SolutionArticle”
-**completed via http://drawdownwiki.info/index.php?title=MediaWiki:Common.css&action=edit adding .catlinks { display: none; }
-
-8. Felix & Antoine Work with Nithin to add new Crowdsourcer help text
+DONE 60. Felix & Antoine Work with Nithin to add new Crowdsourcer help text
 Change filename for “SolutionArticle” to http://drawdownwiki.info/index.php?title=Category:Directory_of_solutions so it displays "Directory of solutions" matching navbar link 
-**Please clarify #8 seems like multiple old/completed requests merged together.
+**Please clarify #8 seems like multiple old/completed requests merged together. F: Easier way to respond to this request: far easier is to change the navbar label from current "Directory of solutions" to  "Solution articles" so it basically matches the pages it displays  **I still don't understand the reasoning but I have now switched sidebar label from current "Directory of solutions" to  "Solution articles" 
+
+DONE 61. Felix will ask CMD how to "freeze" the labels and the information in the infobox to all but Admin. F: NO LONGER NEEDED
+
+DONE 62. Logo: Make word "WIKI" "wiki" (all lower case)
+**This logo (now created several times) is as was as first mentioned a "stand in" presumably an artistic volunteer with proper image editing software, tallent and exp. will come along. F: LOOKS FINE
+
+DONE 63. Sidebar: Rename "Starting page" to "Main page" F: YES, THANKS
+
+DONE 64. Sidebar: Remove "From ClimatePolitics" F: YES< THANKS
+
+DONE 65 Remove "Edit" tab from all articles
+**Completed via $wgGroupPermissions['']['viewedittab'] = false;)   
+**Now that this is done, perhaps #10 is moot F: YES, This is a wonderful solution. 
+ 
+DONE 66. (redo of #42.) Test the "edit with form" function and troubleshoot: 
+F: I tried to edit the test words for Afforestation we had entered. When I click on Edit with forms, the four single word items don't show up in the boxes. I tried entering new text in the boxes and it didn't display and onclicking Edit with forms, all the boxes showed up empty.. I then tried the same thing on Airplanes. This time, after entering test words, I clicked Preview and it displayed the words, but they didn't show up on exiting edit, and they weren't still there when I again clicked Edit. **I looked at many possible sources for this issue, finally I found the culprit an extra "|" within the form settings page http://drawdownwiki.info/index.php?title=Form:SolutionArticle&action=edit 
+This line 
+"| {{{field||_talk_4|input type=textarea|rows=10}}}" 
+Should have been: 
+"| {{{field|_talk_4|input type=textarea|rows=10}}}"
+It now works fine when I test it.
+
+
+#### To Do ####
 
 9. To wrap text around photo: Create template for homepage with sideline element for book photo image 
-**By "homepage" I presume "Main page" is meant, and I don't have a clear vision of how you want it to be different.
-
-10. Felix will ask CMD how to "freeze" the labels and the information in the infobox to all but Admin.
-
-DONE 11. Logo: Make word "WIKI" "wiki" (all lower case)
-**This logo (now created several times) is as was as first mentioned a "stand in" presumably an artistic volunteer with proper image editing software, tallent and exp. will come along.
-
-DONE 12. Sidebar: Rename "Starting page" to "Main page"
-
-DONE 13. Sidebar: Remove "From ClimatePolitics"
-
-DONE 14 Remove "Edit" tab from all articles
-**Completed via $wgGroupPermissions['']['viewedittab'] = false;)   
-**Now that this is done, perhaps #10 is moot 
- 
-15. Test the "edit with form" function and troubleshoot 
+**By "homepage" I presume "Main page" is meant, and I don't have a clear vision of how you want it to be different. F: I'm using your language about how you were going to do this, so the photo sits on the left side under "About the Drawdown Projet and the book" and the text wraps on the left of the photo
 
 
 
