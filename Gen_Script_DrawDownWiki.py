@@ -30,7 +30,7 @@ default = "" #Create a result for dictionary response when key does not occure
 count = 0
 
 #### Import CSV
-with open('/Users/macbook/GIT/DrawDownWiki/DrawDownArticles.csv', 'r') as csvfile:
+with open('/Users/macbook/GIT/DrawDownWiki/documentation/AllDrawDownArticles.csv', 'r') as csvfile:
     data = csv.reader(csvfile, delimiter=';')
     csv_list = list(data)
 
@@ -82,13 +82,17 @@ for Article in csv_list:
         + '|' + row_variable_name[8] + '=' + Article[8] +'\n'
         + '|' + row_variable_name[9] + '=' + Article[9] +'\n'
             )
-    insert = '{{SolutionArticle' + '\n' + body + '|_talk_1=' + '\n' + '|_talk_2=' + '\n' + '}}' + '\n' + '\n' + category
+    insert = '{{SolutionArticle' + '\n' + body + '|_talk_1=' + '\n' + '|_talk_2=' + '\n' + '|_talk_3=' + '\n' + '}}' + '\n' + '\n' + category
     insert = str(insert)
+
     a_page = site.Pages[Article[9]]
     if a_page.exists == False:
         a_page.save(insert, save_note)
         count = count + 1
         print (count)
     else:
-        print("Page already exists, will not overwrite")
+        #print("Page already exists, will not overwrite")
+        a_page.save(insert, save_note)
+        count = count + 1
+        print (count)
     time.sleep(10)
