@@ -1,78 +1,140 @@
 Creating DrawDownWiki.info DNS, server(cPanel) & wiki setup ### COMPLETED ####
-1.  Subdomain added to cpanel.
-2.  drawdown Root dir added
-3.  drawdown MySQL DB created  https://www.siteground.com/tutorials/mediawiki/manual-installation/
-4.  userdrawdown a full privileged user of MySQL DB created/granted
-5.  Create FTP
-6.  Addon Domain of drawdownwiki.info with subdomain of drawdownwiki added to cp cpanel with
-7.  cname host:www points to:@ (fow urls with and without www preface)
-8.  Google reCaptcha registered, installed, setup
-Lean start skipped:  Google analytics
-Lean start skipped:  Various extensions
-9. Install Semantic MW https://www.mediawiki.org/wiki/Extension:Semantic_MediaWiki
-10.  Install Semantic Title https://www.mediawiki.org/wiki/Extension:Semantic_Title
-11.  Create account for bot (A_Admin)
-12.  Grant account privileges to key accounts (Felix & Bot) http://drawdownwiki.info/index.php?title=Special:UserRights
+ 1.  Subdomain added to cpanel.
+ 2.  drawdown Root dir added
+ 3.  drawdown MySQL DB created  https://www.siteground.com/tutorials/mediawiki/manual-installation/
+ 4.  userdrawdown a full privileged user of MySQL DB created/granted
+ 5.  Create FTP
+ 6.  Addon Domain of drawdownwiki.info with subdomain of drawdownwiki added to cp cpanel with
+ 7.  cname host:www points to:@ (fow urls with and without www preface)
+ 8.  Google reCaptcha registered, installed, setup
+ Lean start skipped:  Google analytics
+ Lean start skipped:  Various extensions
+ 9. Install Semantic MW https://www.mediawiki.org/wiki/Extension:Semantic_MediaWiki
+ 10.  Install Semantic Title https://www.mediawiki.org/wiki/Extension:Semantic_Title
+ 11.  Create account for bot (A_Admin)
+ 12.  Grant account privileges to key accounts (Felix & Bot) http://drawdownwiki.info/index.php?title=Special:UserRights
+ 
+ Adding Articles to DrawDownWiki.info ### COMPLETED ####
+ 13. Add login keys to local keychain ( To /usr/local/keys.json added   "DrawDownWiki":{"User": A_Admin,  "Access": "THE-USER-PASSWORD}, )
+ 14. Clean data from excel and export to a .csv (1st row are labels, 2nd row variable_names)
+ 15. Created category "SolutionArticle" http://drawdownwiki.info/index.php?title=Category:SolutionArticle https://www.mediawiki.org/wiki/Help:Categories
+ 16. Create category template (side box, formatting, url variables) http://drawdownwiki.info/index.php?title=Template:SolutionArticle&action=edit
+ 17. Write script to generate articles, set variables & formatting: /Users/macbook/GIT/DrawDownWiki/Gen_Script_DrawDownWiki.py
+ 18. Add article page titles to .csv for current generation & for records
+ 19. Execute Gen_Script_DrawDownWiki.py & review generated articles
+ 
+ Aesthetics ### COMPLETED ####
+ 20.  Set sidebar links http://drawdownwiki.info/index.php?title=MediaWiki:Sidebar
+ 21.  Remove default tool bar http://www.mikebrawley.com/2011/11/how-to-remove-toolbox-from-the-sidebar-in-mediawiki/  http://drawdownwiki.info/index.php?title=MediaWiki:Common.css
+ 22.  Create stand-in logo drawdown.png
+ 23.  Resize stand-in logo to MW standard 135x135: "convert drawdown.png -resize 200x100 drawdown.png"
+ 24.  Stand-in logo added as "$wgResourceBasePath/resources/assets/drawdown.png"
+ 
+ Additional ### COMPLETED ####
+ 25.  Every page notice added http://drawdownwiki.info/index.php?title=MediaWiki:Sitenotice
+ 26.  Bottom recent edit notice removed (edit both http://drawdownwiki.info/index.php?title=MediaWiki:Lastmodifiedat AND http://drawdownwiki.info/index.php?title=MediaWiki:Lastmodifiedatby )
+ 27.  Remove other contributions mention http://drawdownwiki.info/index.php?title=MediaWiki:Othercontribs
+ 28.  Remove disclaimer notice from footer http://drawdownwiki.info/index.php?title=MediaWiki:Disclaimers
+ 29.  Remove privacy policy from footer http://drawdownwiki.info/index.php?title=MediaWiki:Privacypage
+ 30. Remove about link from footer http://drawdownwiki.info/index.php?title=MediaWiki:Aboutsite
+ Lean start skipped:  Add Links etc, optional additional modifications: http://how-to.wikia.com/wiki/How_to_customize_MediaWiki#Add_links
+ 31. Allow external image adjust wiki config settings http://www.mediawiki.org/wiki/Manual:$wgAllowExternalImages
+ 32. Updated & approve the "Main Page": http://drawdownwiki.info/index.php?title=Main_Page
+ 33. (25. cont.) Updated the everypage notice with FK text from 2017 Dec 20
+ 34. Create quote template. Use by {{ QuoteTemplate | "Sometext"}}  controls: http://drawdownwiki.info/index.php?title=Template:QuoteTemplate
+ 35. Created favicon & added to cPanel dir: DD/ then adjusted wiki $wgFavicon = "$wgScriptPath/CP_Logo_square.ico";
+ 36. (22. cont.) create logo with "(unofficial)" & upload to cPanel
+ 37. Create pages: About, Help, Donate
+ 38. (20. cont.) update sidebar
+ Lean start skip form for editing variables, pubic will use edit tab on pages for discussion.
+ 39. As per FK update Solution Articles template with Additions, Technical, Business, and edit every page to include _talk3  (re: "Does the public edit the articles directly or do we install wiki forms and create a form for the Article category inorder to edit community discussion?")
+ Lean start skipped: Multilingual widget
+ Lean start skip: New Directory Page (in progress http://drawdownwiki.info/index.php?title=Directory_of_Solutions )
+ 40. FK identified that editing was difficult for public: Solution is to: Install form extension  https://www.mediawiki.org/wiki/Extension:Page_Forms/Download_and_installation (done) then #41
+ 41. Created form edit method for category SolutionArticle  http://drawdownwiki.info/index.php?title=Form:SolutionArticle&action=edit
+ 
+ Additional: Felix' feedback list
+ 42. Now use "edit with form": “When in edit mode on a page, I want to be able to edit the 3 community text sections. (Right now edit presents the ability to edit the databox.)”
+ 43. Change article page's side display box formates to: “DATABOX: Change sequence and Rename labels to: *Solution *Sector: (for final 20 that should be Coming Attraction) *Page in Book: *Ranking in Book:  *GHG Reduction: *Net Cost: *Savings: *Links and References  *Technical Assessment” Helpful: https://www.mediawiki.org/wiki/Help:Tables
+ 44. “Add note at bottom of Databox: “Summary from Published Drawdown Book (more on categories on page xiv)”
+ 45. Double check admin privledges for Felix' account
+ 46. Created link as per: “I do want to add another editable page for “Other Drawdown projects” below Directory of Solutions.”
+ 47. Removed per request: “And delete the “From ClimatePolitics” line on the sidebar, since those pages are now on the site”
+ 48. 4th community text section added: Wikipedia & Other Top Links” (Instead “Wikipedia & other top links” was used if not all of the other sections need to be renamed to match by using upper caps. http://drawdownwiki.info/index.php?title=Form:SolutionArticle&action=edit )
+ 49. NEW TEXT FOR ALL ARTICLE PAGES (This can co-exist with Nithin’s new help text):
+ Please use these initial categories to include your research and lists of open questions and topics.
+ Quick help: (more at [http://drawdownwiki.info/index.php?title=Help Crowdsourcer help link] in sidebar).
+ Without establishing an account, you can “Read” this article, use the “View history” tab to see changes, and the “Discussion” tab to view conversations and opinions.
+ When you register as a user on the upper right of the screen, you can use the “Edit with form” tab to add information and the “Discussion” tab for comments.
+ Right now at our Help link you can find links to help at MediaWiki but soon we’ll have our own guidance about research sources and formatting your
+ 50.  Admin question: Point me to where I can edit the Sidebar without needing your help so I can delete the “From ClimatePolitics” line on the sidebar, since
+ Answer: On any media wiki it is the MediaWiki:Sidebar page, in our case simply enter the URL: http://drawdownwiki.info/index.php?title=MediaWiki:Sidebar it is found from the sidebar by clicking: Admin > Lists of pages > All Pages > Namespace = Mediawiki
+ ##. (DONE Felix completed) Intro text for new Other Drawdown projects article:
+ Page headline: Thanks for bringing Drawdown solutions to the world
+  We invite  you to list here any project that advances awareness, research, or deployment of Drawdown solutions! For any project, please write a short paragraph including as much of the following as you can: Name, Description,  Location, Date Started, Needs and Resources Available, URL or
+  51. “And delete the “From ClimatePolitics” line on the sidebar, since those pages are now on the site”
+  
 
-Adding Articles to DrawDownWiki.info ### COMPLETED ####
-13. Add login keys to local keychain ( To /usr/local/keys.json added   "DrawDownWiki":{"User": A_Admin,  "Access": "THE-USER-PASSWORD}, )
-14. Clean data from excel and export to a .csv (1st row are labels, 2nd row variable_names)
-15. Created category "SolutionArticle" http://drawdownwiki.info/index.php?title=Category:SolutionArticle https://www.mediawiki.org/wiki/Help:Categories
-16. Create category template (side box, formatting, url variables) http://drawdownwiki.info/index.php?title=Template:SolutionArticle&action=edit
-17. Write script to generate articles, set variables & formatting: /Users/macbook/GIT/DrawDownWiki/Gen_Script_DrawDownWiki.py
-18. Add article page titles to .csv for current generation & for records
-19. Execute Gen_Script_DrawDownWiki.py & review generated articles
+DONE 53. Create 20 Coming Attractions articles F: YES, NOT YET DONE
+DONE 54. Add to Directory: 20 Coming Attractions articles. F:Yes.
+DONE 55. (Infobox) Variable "Sector:" will be  "Coming attractions"
+        ** Do you want "Sector" or (as with the other articles) "Solution sector:"? F: YES, all Solutions and Coming Attractions should have the same label, 'Solutions" as you've already changed throughout.
+DONE 55. (Infobox) Variable "Page in book:" will show page number  F:YES
+DONE 55. (Infobox) "Book article" link from Links & references label
+        **Clarity is key here: I believe what you want is to direct the variable "Links & references:" to the URLs of the original excel column "Link to Writeup, References, and Errata" as a hyperlink that displays the text "Book_article" F:YES
+DONE 55. (Infobox) rest will be blank.  F:YES
 
-Aesthetics ### COMPLETED ####
-20.  Set sidebar links http://drawdownwiki.info/index.php?title=MediaWiki:Sidebar
-21.  Remove default tool bar http://www.mikebrawley.com/2011/11/how-to-remove-toolbox-from-the-sidebar-in-mediawiki/  http://drawdownwiki.info/index.php?title=MediaWiki:Common.css
-22.  Create stand-in logo drawdown.png
-23.  Resize stand-in logo to MW standard 135x135: "convert drawdown.png -resize 200x100 drawdown.png"
-24.  Stand-in logo added as "$wgResourceBasePath/resources/assets/drawdown.png"
-
-Additional ### COMPLETED ####
-25.  Every page notice added http://drawdownwiki.info/index.php?title=MediaWiki:Sitenotice
-26.  Bottom recent edit notice removed (edit both http://drawdownwiki.info/index.php?title=MediaWiki:Lastmodifiedat AND http://drawdownwiki.info/index.php?title=MediaWiki:Lastmodifiedatby )
-27.  Remove other contributions mention http://drawdownwiki.info/index.php?title=MediaWiki:Othercontribs
-28.  Remove disclaimer notice from footer http://drawdownwiki.info/index.php?title=MediaWiki:Disclaimers
-29.  Remove privacy policy from footer http://drawdownwiki.info/index.php?title=MediaWiki:Privacypage
-30. Remove about link from footer http://drawdownwiki.info/index.php?title=MediaWiki:Aboutsite
-Lean start skipped:  Add Links etc, optional additional modifications: http://how-to.wikia.com/wiki/How_to_customize_MediaWiki#Add_links
-31. Allow external image adjust wiki config settings http://www.mediawiki.org/wiki/Manual:$wgAllowExternalImages
-32. Updated & approve the "Main Page": http://drawdownwiki.info/index.php?title=Main_Page
-33. (25. cont.) Updated the everypage notice with FK text from 2017 Dec 20
-34. Create quote template. Use by {{ QuoteTemplate | "Sometext"}}  controls: http://drawdownwiki.info/index.php?title=Template:QuoteTemplate
-35. Created favicon & added to cPanel dir: DD/ then adjusted wiki $wgFavicon = "$wgScriptPath/CP_Logo_square.ico";
-36. (22. cont.) create logo with "(unofficial)" & upload to cPanel
-37. Create pages: About, Help, Donate
-38. (20. cont.) update sidebar
-Lean start skip form for editing variables, pubic will use edit tab on pages for discussion.
-39. As per FK update Solution Articles template with Additions, Technical, Business, and edit every page to include _talk3  (re: "Does the public edit the articles directly or do we install wiki forms and create a form for the Article category inorder to edit community discussion?")
-Lean start skipped: Multilingual widget
-Lean start skip: New Directory Page (in progress http://drawdownwiki.info/index.php?title=Directory_of_Solutions )
-40. FK identified that editing was difficult for public: Solution is to: Install form extension  https://www.mediawiki.org/wiki/Extension:Page_Forms/Download_and_installation (done) then #41
-41. Created form edit method for category SolutionArticle  http://drawdownwiki.info/index.php?title=Form:SolutionArticle&action=edit
+DONE 56. Directory and formatting: Delete Alphabet letters, run list together. 
+**If you mean the this page: http://drawdownwiki.info/index.php?title=Category:SolutionArticle it is a special 'Category:' page and cannot be edited that way. I can create a new page, and render a borderless table displaying articles from the "SolutionArticle" category.F: YES, if it's not too time-consuming to create, this will be fine. **Rendered with border, borderless table with sorting looks suboptimal
 
 
+DONE 57. Infobox: Results for "Links & references:" should hyperlink to the current URL but display "Book_article"
+**If this looks good I will write & execute a script to automate this. F:YES, THANKS
 
+DONE 58. Infobox: Results for "Technical assessment:" should hyperlink to the current URL but display "Drawdown_database_PDF"
+**If this looks good I will write & execute a script to automate this. F:YES, THANKS
+
+DONE 59. Bottom of solution articles: suppressbox with text saying “Category: SolutionArticle”
+**completed via http://drawdownwiki.info/index.php?title=MediaWiki:Common.css&action=edit adding .catlinks { display: none; } F"YES, THANKS
+
+DONE 60. Felix & Antoine Work with Nithin to add new Crowdsourcer help text
+Change filename for “SolutionArticle” to http://drawdownwiki.info/index.php?title=Category:Directory_of_solutions so it displays "Directory of solutions" matching navbar link 
+**Please clarify #8 seems like multiple old/completed requests merged together. F: Easier way to respond to this request: far easier is to change the navbar label from current "Directory of solutions" to  "Solution articles" so it basically matches the pages it displays  **I still don't understand the reasoning but I have now switched sidebar label from current "Directory of solutions" to  "Solution articles" 
+
+DONE 61. Felix will ask CMD how to "freeze" the labels and the information in the infobox to all but Admin. F: NO LONGER NEEDED
+
+DONE 62. Logo: Make word "WIKI" "wiki" (all lower case)
+**This logo (now created several times) is as was as first mentioned a "stand in" presumably an artistic volunteer with proper image editing software, tallent and exp. will come along. F: LOOKS FINE
+
+DONE 63. Sidebar: Rename "Starting page" to "Main page" F: YES, THANKS
+
+DONE 64. Sidebar: Remove "From ClimatePolitics" F: YES< THANKS
+
+DONE 65 Remove "Edit" tab from all articles
+**Completed via $wgGroupPermissions['']['viewedittab'] = false;)   
+**Now that this is done, perhaps #10 is moot F: YES, This is a wonderful solution. 
+ 
+DONE 66. (redo of #42.) Test the "edit with form" function and troubleshoot: 
+F: I tried to edit the test words for Afforestation we had entered. When I click on Edit with forms, the four single word items don't show up in the boxes. I tried entering new text in the boxes and it didn't display and onclicking Edit with forms, all the boxes showed up empty.. I then tried the same thing on Airplanes. This time, after entering test words, I clicked Preview and it displayed the words, but they didn't show up on exiting edit, and they weren't still there when I again clicked Edit. **I looked at many possible sources for this issue, finally I found the culprit an extra "|" within the form settings page http://drawdownwiki.info/index.php?title=Form:SolutionArticle&action=edit 
+This line 
+"| {{{field||_talk_4|input type=textarea|rows=10}}}" 
+Should have been: 
+"| {{{field|_talk_4|input type=textarea|rows=10}}}"
+It now works fine when I test it.
 
 
 #### To Do ####
-Fine now? 1. “When in edit mode on a page, I want to be able to edit the 3 community text sections. (Right now edit presents the ability to edit the databox.)”
-2. “DATABOX: Change sequence and Rename labels to: *Solution *Sector: (for final 20 that should be Coming Attraction) *Page in Book: *Ranking in Book:  *GHG Reduction: *Net Cost: *Savings: *Links and References  *Technical Assessment”
-3. “Add note at bottom of Databox: “Summary from Published Drawdown Book (more on categories on page xiv)”
-4. “Add 20 Coming Attractions. And Directory should show 82 — now it’s 83 because it includes Directory of Solutions in the count. [FYI Mystery solved why it’s not 80: 77th ranked solution includes Energy Storage (Distributed, Energy Storage) Utilities), Grid Flexibility]”
-5. “I do want to add another editable page for “Other Drawdown projects” below Directory of Solutions.”
-6. “And delete the “From ClimatePolitics” line on the sidebar, since those pages are now on the site”
-Fine now? 7. “Troubleshoot article display issue on iPhone ” -Changed URL rendering to short text with hyperlink, prevents screen hogging text lines
-8. “Give me admin privileges, ability to give a user Admin privileges.”
-9. “Add a 4th community text secdtion: Wikipedia & Other Top Links”
-10. “Change filename for SolutionArticle.” (edited)
+
+9. To wrap text around photo: Create template for homepage with sideline element for book photo image 
+**By "homepage" I presume "Main page" is meant, and I don't have a clear vision of how you want it to be different. F: I'm using your language about how you were going to do this, so the photo sits on the left side under "About the Drawdown Projet and the book" and the text wraps on the left of the photo
 
 
 
-#### Neat but not now ####
-Remove Discussion and edit tab: Ant note: https://www.hostknox.com/knowledgebase/674/How-to-remove-the-top-navigation-page-tabs-in-MediaWiki.html  http://drawdownwiki.info/index.php?title=MediaWiki:Common.css
-SMW Graph https://www.mediawiki.org/wiki/Extension:Semantic_MediaWiki_Graph
-Akin to SparqlCharts https://www.mediawiki.org/wiki/Extension:SparqlCharts
-Glossary https://www.mediawiki.org/wiki/Extension:Semantic_Glossary
+ #### Neat but not now ####
+Remove Discussion tab: Ant note: https://www.hostknox.com/knowledgebase/674/How-to-remove-the-top-navigation-page-tabs-in-MediaWiki.html  http://drawdownwiki.info/index.php?title=MediaWiki:Common.css
+  SMW Graph https://www.mediawiki.org/wiki/Extension:Semantic_MediaWiki_Graph
+  Akin to SparqlCharts https://www.mediawiki.org/wiki/Extension:SparqlCharts
+  Glossary https://www.mediawiki.org/wiki/Extension:Semantic_Glossary
+ Google analytics
+ Various extensions
+
