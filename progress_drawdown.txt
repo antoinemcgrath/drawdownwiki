@@ -126,7 +126,7 @@ DONE 67. Change Maine_Page to render image inline with texts http://drawdownwiki
 DONE 68. Change 'Caputre' page to 'Capture', update http://drawdownwiki.info/index.php?title=Direct_Air_Capture
 DONE 69. Update directory to include/exlude Capture/Caputre http://drawdownwiki.info/index.php?title=Directory_of_Solutions
 DONE 70. Add a line above the table at "http://drawdownwiki.info/index.php?title=Directory_of_Solutions" that says "Solutions in bold contain crowdsourced information."
-
+DONE 71. On any solution article using "Edit with form" would write the new content to the article page and remove blank values. The problem with this is that template instead of rendering blank values such as " " it was instead printing "{"{{_variableName}}}". I believe this has been sufficiently corrected, if you notice any renderings of "{{{"+text+"}}}" please let me know.
 
 #### To Do ####
 
