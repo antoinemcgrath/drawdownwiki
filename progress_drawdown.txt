@@ -13,7 +13,7 @@ Creating DrawDownWiki.info DNS, server(cPanel) & wiki setup ### COMPLETED ####
  10.  Install Semantic Title https://www.mediawiki.org/wiki/Extension:Semantic_Title
  11.  Create account for bot (A_Admin)
  12.  Grant account privileges to key accounts (Felix & Bot) http://drawdownwiki.info/index.php?title=Special:UserRights
- 
+
  Adding Articles to DrawDownWiki.info ### COMPLETED ####
  13. Add login keys to local keychain ( To /usr/local/keys.json added   "DrawDownWiki":{"User": A_Admin,  "Access": "THE-USER-PASSWORD}, )
  14. Clean data from excel and export to a .csv (1st row are labels, 2nd row variable_names)
@@ -22,14 +22,14 @@ Creating DrawDownWiki.info DNS, server(cPanel) & wiki setup ### COMPLETED ####
  17. Write script to generate articles, set variables & formatting: /Users/macbook/GIT/DrawDownWiki/Gen_Script_DrawDownWiki.py
  18. Add article page titles to .csv for current generation & for records
  19. Execute Gen_Script_DrawDownWiki.py & review generated articles
- 
+
  Aesthetics ### COMPLETED ####
  20.  Set sidebar links http://drawdownwiki.info/index.php?title=MediaWiki:Sidebar
  21.  Remove default tool bar http://www.mikebrawley.com/2011/11/how-to-remove-toolbox-from-the-sidebar-in-mediawiki/  http://drawdownwiki.info/index.php?title=MediaWiki:Common.css
  22.  Create stand-in logo drawdown.png
  23.  Resize stand-in logo to MW standard 135x135: "convert drawdown.png -resize 200x100 drawdown.png"
  24.  Stand-in logo added as "$wgResourceBasePath/resources/assets/drawdown.png"
- 
+
  Additional ### COMPLETED ####
  25.  Every page notice added http://drawdownwiki.info/index.php?title=MediaWiki:Sitenotice
  26.  Bottom recent edit notice removed (edit both http://drawdownwiki.info/index.php?title=MediaWiki:Lastmodifiedat AND http://drawdownwiki.info/index.php?title=MediaWiki:Lastmodifiedatby )
@@ -52,7 +52,7 @@ Creating DrawDownWiki.info DNS, server(cPanel) & wiki setup ### COMPLETED ####
  Lean start skip: New Directory Page (in progress http://drawdownwiki.info/index.php?title=Directory_of_Solutions )
  40. FK identified that editing was difficult for public: Solution is to: Install form extension  https://www.mediawiki.org/wiki/Extension:Page_Forms/Download_and_installation (done) then #41
  41. Created form edit method for category SolutionArticle  http://drawdownwiki.info/index.php?title=Form:SolutionArticle&action=edit
- 
+
  Additional: Felix' feedback list
  42. Now use "edit with form": “When in edit mode on a page, I want to be able to edit the 3 community text sections. (Right now edit presents the ability to edit the databox.)”
  43. Change article page's side display box formates to: “DATABOX: Change sequence and Rename labels to: *Solution *Sector: (for final 20 that should be Coming Attraction) *Page in Book: *Ranking in Book:  *GHG Reduction: *Net Cost: *Savings: *Links and References  *Technical Assessment” Helpful: https://www.mediawiki.org/wiki/Help:Tables
@@ -73,7 +73,7 @@ Creating DrawDownWiki.info DNS, server(cPanel) & wiki setup ### COMPLETED ####
  Page headline: Thanks for bringing Drawdown solutions to the world
   We invite  you to list here any project that advances awareness, research, or deployment of Drawdown solutions! For any project, please write a short paragraph including as much of the following as you can: Name, Description,  Location, Date Started, Needs and Resources Available, URL or
   51. “And delete the “From ClimatePolitics” line on the sidebar, since those pages are now on the site”
-  
+
 
 DONE 53. Create 20 Coming Attractions articles F: YES, NOT YET DONE
 DONE 54. Add to Directory: 20 Coming Attractions articles. F:Yes.
@@ -84,7 +84,7 @@ DONE 55. (Infobox) "Book article" link from Links & references label
         **Clarity is key here: I believe what you want is to direct the variable "Links & references:" to the URLs of the original excel column "Link to Writeup, References, and Errata" as a hyperlink that displays the text "Book_article" F:YES
 DONE 55. (Infobox) rest will be blank.  F:YES
 
-DONE 56. Directory and formatting: Delete Alphabet letters, run list together. 
+DONE 56. Directory and formatting: Delete Alphabet letters, run list together.
 **If you mean the this page: http://drawdownwiki.info/index.php?title=Category:SolutionArticle it is a special 'Category:' page and cannot be edited that way. I can create a new page, and render a borderless table displaying articles from the "SolutionArticle" category.F: YES, if it's not too time-consuming to create, this will be fine. **Rendered with border, borderless table with sorting looks suboptimal
 
 
@@ -98,8 +98,8 @@ DONE 59. Bottom of solution articles: suppressbox with text saying “Category: 
 **completed via http://drawdownwiki.info/index.php?title=MediaWiki:Common.css&action=edit adding .catlinks { display: none; } F"YES, THANKS
 
 DONE 60. Felix & Antoine Work with Nithin to add new Crowdsourcer help text
-Change filename for “SolutionArticle” to http://drawdownwiki.info/index.php?title=Category:Directory_of_solutions so it displays "Directory of solutions" matching navbar link 
-**Please clarify #8 seems like multiple old/completed requests merged together. F: Easier way to respond to this request: far easier is to change the navbar label from current "Directory of solutions" to  "Solution articles" so it basically matches the pages it displays  **I still don't understand the reasoning but I have now switched sidebar label from current "Directory of solutions" to  "Solution articles" 
+Change filename for “SolutionArticle” to http://drawdownwiki.info/index.php?title=Category:Directory_of_solutions so it displays "Directory of solutions" matching navbar link
+**Please clarify #8 seems like multiple old/completed requests merged together. F: Easier way to respond to this request: far easier is to change the navbar label from current "Directory of solutions" to  "Solution articles" so it basically matches the pages it displays  **I still don't understand the reasoning but I have now switched sidebar label from current "Directory of solutions" to  "Solution articles"
 
 DONE 61. Felix will ask CMD how to "freeze" the labels and the information in the infobox to all but Admin. F: NO LONGER NEEDED
 
@@ -111,22 +111,41 @@ DONE 63. Sidebar: Rename "Starting page" to "Main page" F: YES, THANKS
 DONE 64. Sidebar: Remove "From ClimatePolitics" F: YES< THANKS
 
 DONE 65 Remove "Edit" tab from all articles
-**Completed via $wgGroupPermissions['']['viewedittab'] = false;)   
-**Now that this is done, perhaps #10 is moot F: YES, This is a wonderful solution. 
- 
-DONE 66. (redo of #42.) Test the "edit with form" function and troubleshoot: 
-F: I tried to edit the test words for Afforestation we had entered. When I click on Edit with forms, the four single word items don't show up in the boxes. I tried entering new text in the boxes and it didn't display and onclicking Edit with forms, all the boxes showed up empty.. I then tried the same thing on Airplanes. This time, after entering test words, I clicked Preview and it displayed the words, but they didn't show up on exiting edit, and they weren't still there when I again clicked Edit. **I looked at many possible sources for this issue, finally I found the culprit an extra "|" within the form settings page http://drawdownwiki.info/index.php?title=Form:SolutionArticle&action=edit 
-This line 
-"| {{{field||_talk_4|input type=textarea|rows=10}}}" 
-Should have been: 
+**Completed via $wgGroupPermissions['']['viewedittab'] = false;)
+**Now that this is done, perhaps #10 is moot F: YES, This is a wonderful solution.
+
+DONE 66. (redo of #42.) Test the "edit with form" function and troubleshoot:
+F: I tried to edit the test words for Afforestation we had entered. When I click on Edit with forms, the four single word items don't show up in the boxes. I tried entering new text in the boxes and it didn't display and onclicking Edit with forms, all the boxes showed up empty.. I then tried the same thing on Airplanes. This time, after entering test words, I clicked Preview and it displayed the words, but they didn't show up on exiting edit, and they weren't still there when I again clicked Edit. **I looked at many possible sources for this issue, finally I found the culprit an extra "|" within the form settings page http://drawdownwiki.info/index.php?title=Form:SolutionArticle&action=edit
+This line
+"| {{{field||_talk_4|input type=textarea|rows=10}}}"
+Should have been:
 "| {{{field|_talk_4|input type=textarea|rows=10}}}"
 It now works fine when I test it.
+
+DONE 67. Change Maine_Page to render image inline with texts http://drawdownwiki.info/index.php?title=Main_Page
+DONE 68. Change 'Caputre' page to 'Capture', update http://drawdownwiki.info/index.php?title=Direct_Air_Capture
+DONE 69. Update directory to include/exlude Capture/Caputre http://drawdownwiki.info/index.php?title=Directory_of_Solutions
+DONE 70. Add a line above the table at "http://drawdownwiki.info/index.php?title=Directory_of_Solutions" that says "Solutions in bold contain crowdsourced information."
 
 
 #### To Do ####
 
-9. To wrap text around photo: Create template for homepage with sideline element for book photo image 
-**By "homepage" I presume "Main page" is meant, and I don't have a clear vision of how you want it to be different. F: I'm using your language about how you were going to do this, so the photo sits on the left side under "About the Drawdown Projet and the book" and the text wraps on the left of the photo
+
+1) Edit buttons on "Directory of solutions", "Other Drawdown projects" & every article/page that is not withing the "Solutions category".
+**Felix- What is the best way for this article and About/Donate/Crowdsourcer help to be editable only by Admin?
+**AM- By default every article/page can be edited the community avid watchers can undo vandalism if it occurs, the solution is to undo things you do not want. I removed the edit button from all articles that are in the solutions category, So far as locking values/page content goes I have not done that, I can look into it but I believe you were/did going to ask CMB/others about that.
+***F: I will ask them about this.
+
+2) In category solutions template have no text  to the right of the label "Technical assessment." if the solutions is one of the "20 upcoming"
+**AM- No inline queries solutions found. Hundreds of variations including the following ones have been tried. The table/smw/mw syntax for rendering links with alternative text and suppressing all text based off of a variable is difficult within MW.
+| [{{{_link_assessment}}} Drawdown_database_PDF]
+| {#if:_link_assessment|[{{{_link_assessment|}}}Drawdown_database_PDF]|None.}
+| {{#if:_link_assessment|[{{{_link_assessment|}}}Drawdown_database_PDF]|None.}}
+| #if:_link_assessment|[{{{_link_assessment|}}}Drawdown_database_PDF]|None.
+| [[Has _link_assessment::{{{_link_assessment|}}}]]
+| [[Has _link_assessment::[{{{_link_assessment}}} Drawdown_database_PDF]|]]
+| [[Has _link_assessment::{{{[{{{_link_assessment}}} Drawdown_database_PDF]|}}}]]
+
 
 
 
@@ -137,4 +156,3 @@ Remove Discussion tab: Ant note: https://www.hostknox.com/knowledgebase/674/How-
   Glossary https://www.mediawiki.org/wiki/Extension:Semantic_Glossary
  Google analytics
  Various extensions
-
