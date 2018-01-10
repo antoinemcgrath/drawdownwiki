@@ -145,8 +145,41 @@ DONE 71. On any solution article using "Edit with form" would write the new cont
 | [[Has _link_assessment::{{{_link_assessment|}}}]]
 | [[Has _link_assessment::[{{{_link_assessment}}} Drawdown_database_PDF]|]]
 | [[Has _link_assessment::{{{[{{{_link_assessment}}} Drawdown_database_PDF]|}}}]]
-
-
+|{{{[{{{_link_assessment|}}} Drawdown_database_PDF]|}}}
+|{{{[_link_assessment|Drawdown_database_PDF]|}}}
+|-
+! ?Has _link_assessment Tech:
+|[{{{_link_assessment|}}}Drawdown_database_PDF]
+|-
+! ?has _link_assessment Tech:
+|[{{{_link_assessment|}}}Drawdown_database_PDF]
+|-
+! Technical assessment:
+|[{{{_link_assessment|}}}Drawdown_database_PDF]
+|-
+!?Has _link_assessment Tech:
+|[{{{_link_assessment|}}}Drawdown_database_PDF]
+|-
+!?has _link_assessment Tech:
+|[{{{_link_assessment|}}}Drawdown_database_PDF]
+|-
+! Technical assessment:
+|[{{{_link_assessment|}}}Drawdown_database_PDF]
+|-
+! ?Has _link_assessment|Tech:
+|[{{{_link_assessment|}}}Drawdown_database_PDF]
+|-
+! ?has _link_assessment|Tech:
+|[{{{_link_assessment|}}}Drawdown_database_PDF]
+|-
+! Technical assessment:
+|[{{{_link_assessment|}}}Drawdown_database_PDF]
+|-
+!?Has _link_assessment|Tech:
+|[{{{_link_assessment|}}}Drawdown_database_PDF]
+|-
+!?has _link_assessment|Tech:
+|[{{{_link_assessment|}}}Drawdown_database_PDF]
 
 
  #### Neat but not now ####
