@@ -1,3 +1,6 @@
+File Link:
+https://github.com/antoinemcgrath/drawdownwiki/blob/master/progress_drawdown.txt
+
 Creating DrawDownWiki.info DNS, server(cPanel) & wiki setup ### COMPLETED ####
  1.  Subdomain added to cpanel.
  2.  drawdown Root dir added
